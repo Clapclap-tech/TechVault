@@ -12,11 +12,11 @@ body {
   font-family: "Inter";
 }
 
-.navbar {
+.header {
   background: var(--primary-color);
   padding: 1em;
 }
-.navbar .logo {
+.header .logo {
   text-decoration: none;
   font-weight: 900;
   color: var(--text-color);
@@ -24,28 +24,41 @@ body {
   border: 2px solid var(--text-color);
   padding: 0.1em;
 }
-.navbar span {
+.header span {
   text-decoration: none;
   font-weight: 900;
   color: var(--main-color);
   font-size: 2em;
 }
-.navbar .container {
+.header .container {
   display: flex;
   place-content: space-between;
   align-items: center;
 }
-.navbar ul {
+.header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
-.navbar ul li a {
+.header ul li a {
   text-decoration: none;
   color: var(--text-color);
   margin-right: 0.5em;
+}
+.header ul li img {
+  height: 2em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: none;
 }
 
 .search-box {
@@ -56,10 +69,41 @@ body {
   display: none;
 }
 
-.secondary-nav {
-  display: none;
+.mobile-menu {
+  cursor: pointer;
 }
 
-.mobile-menu {
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--seconary-color);
+  height: 100vh;
+  padding: 1em;
+}
+nav ul {
+  margin-top: 5em;
+}
+nav li a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: 900;
+}
+
+.mobile-exit {
+  float: right;
+  margin: 0.5em;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

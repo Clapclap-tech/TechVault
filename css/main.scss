@@ -14,7 +14,7 @@ body {
     font-family: 'Inter';
 }
 
-.navbar {
+.header {
     background: var(--primary-color);
     padding: 1em;
 
@@ -54,11 +54,24 @@ body {
                 color: var(--text-color);
                 margin-right: .5em;
             }
+
+            img {
+                height: 2em;
+            }
         }
     }
     
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
 .search-box {
     display: none;
 }
@@ -67,11 +80,48 @@ body {
     display: none;
 }
 
-.secondary-nav {
-    display: none;
+.mobile-menu {
+    cursor: pointer;
 }
 
-.mobile-menu {
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: var(--seconary-color);
+    height: 100vh;
+    padding: 1em;
+
+    ul {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: 900;
+            }
+        }
+    }
+
+}
+
+.mobile-exit {
+    float: right;
+    margin: .5em;
     cursor: pointer;
 }
 

@@ -147,4 +147,33 @@ nav li a:hover {
 }
 .hero-section .slider-nav:hover {
   opacity: 100%;
+}
+
+.dd-searchbar {
+  display: none;
+}
+
+.dd-searchbar.visible {
+  display: flex;
+}
+
+.dd-searchbar {
+  background: var(--seconary-color);
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+}
+.dd-searchbar .dd-search input {
+  height: 2.5em;
+  width: 20em;
+  vertical-align: top;
+  border-radius: 0.5em 0 0 0.5em;
+  border: 0;
+  font-family: "Inter";
+}
+.dd-searchbar .dd-search img {
+  background: var(--main-color);
+  border-radius: 0 0.5em 0.5em 0;
+  height: 2.2em;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
